@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+// Function to return the length of a given string
+int stringLength(const std::string &str) {
+    return str.length();  // Using the built-in length() function of std::string
+}
+
+int main() {
+    // Test cases
+    std::string str1 = "Hello, World!";
+    std::string str2 = "C++ Programming";
+    std::string str3 = "";
+    std::string str4 = "OpenAI GPT";
+
+    // Output the length of each string
+    std::cout << "Length of \"" << str1 << "\" is: " << stringLength(str1) << std::endl;
+    std::cout << "Length of \"" << str2 << "\" is: " << stringLength(str2) << std::endl;
+    std::cout << "Length of \"" << str3 << "\" is: " << stringLength(str3) << std::endl;
+    std::cout << "Length of \"" << str4 << "\" is: " << stringLength(str4) << std::endl;
+
+    return 0;
+}
